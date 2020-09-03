@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <title> Treino de JavaScript</title>
+    <meta charset="UTF-8"/> 
+
+    <style>
+      body {font-size: normal 22pt arial;}
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1>Treino de JavaScript</h1>
+    <p>Declara variável 'nome', pergunta pela Janela o nome do usuário e depois imprime na página a quantidade de caracteres do nome. Depois transforme o nome em maiúsculo e minúsculo</p>
+
+    <script>
+      var nome = window.prompt('Qual seu nome?');
+      document.write(`Olá, ${nome}. Teu nome tem ${nome.length} letras.<br/>`);
+      document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br/>`);
+      document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}<br/>`)
+    </script>
+
+  </body>
+</html>

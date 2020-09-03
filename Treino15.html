@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <title>Treino de JavaScript</title>
+    <meta charset="UTF-8"/> 
+
+    <style>
+      body {background-color: #333380; margin:0px; padding: 0px;}
+      div#area {
+        float: left;
+        background-color: #4747bb;
+        color: #ffffffcc;
+        font-size: normal 20pt "Times New Roman";
+        width: 400px;
+        height: 250px;
+        line-height: 250px;
+        text-align: center;
+        margin: 0px; padding: 0px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div id="area">
+      <h1>Introdução ao DOM</h1>
+    </div>
+
+    <script>
+      var a = window.document.getElementById('area');
+        a.addEventListener('click', clicar);
+        a.addEventListener('mouseenter', entrar);
+        a.addEventListener('mouseout', sair);
+
+      function clicar(){
+        a.innerText = 'clicou!';
+        a.style.background = 'red';
+      }
+      function entrar(){
+        a.innerText = "Entrou!";
+        a.style.color = 'black';
+        a.style.background = 'yellow';
+      }
+      function sair(){
+        a.innerText = "Saiu!";
+        a.style.background = 'green';
+      }
+    </script>
+
+    <p>Mostra como chamar eventos numa Div por ação do mouse</p>
+
+  </body>
+</html>

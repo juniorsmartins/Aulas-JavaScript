@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <title>Treino de JavaScript</title>
+    <meta charset="UTF-8"/> 
+
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-size: normal 22pt arial;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <h1>Primeiros passos com DOM</h1>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <p>Abaixo vão os resultados!</p>
+    <div id="msg">Clique em mim!</div>
+    <script>
+      var d = window.document.getElementById('msg');
+      d.style.background='green';
+      d.innerText = 'Olá, Mundo!';
+    </script>
+
+  </body>
+</html>

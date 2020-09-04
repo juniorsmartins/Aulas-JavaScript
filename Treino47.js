@@ -18,12 +18,4 @@ if (js_resposta == true) {
 
 
 
-
-
-
-
-
-
-
-
 -->

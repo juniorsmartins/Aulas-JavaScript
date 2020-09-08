@@ -1,5 +1,3 @@
-<!--
-
   /* 
     Fundação Bradesco
     Aula de JavaScript
@@ -16,8 +14,3 @@
   } 
   document.write('O resultado é: ' + num1 + ' e ' + num2);
 
-
-
-
-
-//-->

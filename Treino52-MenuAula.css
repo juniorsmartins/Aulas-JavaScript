@@ -1,0 +1,46 @@
+h1, h2
+{
+  font-size: 1.7rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p 
+{
+  font-size: 1.5rem;
+  color: #571a1a36;
+  text-align: center;
+};
+
+input 
+{
+  text-align: center;
+}
+
+body 
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "f_Esquerda f_Central f_Direta"
+  ;
+}
+
+
+#front_Esquerda
+{
+  grid-area: f_Esquerda;
+
+}
+
+#front_Central
+{
+  grid-area: f_Central;
+
+}
+
+#front_Direita
+{
+  grid-area: f_Direita;
+
+}

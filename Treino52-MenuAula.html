@@ -3,11 +3,46 @@
   <head>
     <title>JavaScript</title>
     <meta charset="utf-8"/>
+    <link rel="stylesheet" href="Treino52-MenuAula.css"/>
   </head>
   <body>
-    <h1>JavaScript</h1>
-    <script src="Treino52.js"></script>
-    <input type="number" id="opcao_Menu">
-    <input type="submit" onclick="">
+
+  <!-- Início do Menu Principal - Front da Esquerda -->
+    <div id="front_Esquerda">
+      <h1>Painel de Opções</h1>
+      <p>Front-Esquerda</p>
+      <p>
+        ************************<br/>
+        ************************<br/>
+        ******** MENU *********<br/>
+        ************************<br/>
+        ******* Exercicio 1 *******<br/>
+        ******* Exercicio 2 *******<br/>
+        ******* Exercicio 3 *******<br/>
+        ******* Exercicio 4 *******<br/>
+        ******* Exercicio 5 *******<br/>
+        ******* Exercicio 6 *******<br/>
+        ******* Exercicio 7 *******<br/>
+        ********* Sair 8 *********<br/>
+        ************************<br/>
+        Digite uma opção (de 1 a 8): 
+      </p>
+      <input type="number" id=opcao_Menu />
+      <input type="submit" onclick="painel_Inicial()" value="Enviar!"/>
+    </div>
+  <!-- Fim do Menu Principal - Front da Esquerda -->
+
+    <div id="front_Central">
+      <h2>Software Rodando</h2>
+      <p>Front-Central</p>
+    </div>
+
+    <div id="front_Direta">
+      <h2>Respostas!</h2>
+      <p>Front-Direita</p>
+    </div>
+
+
+    <script src="Treino52-MenuAula.js"></script>
   </body>
 </html>

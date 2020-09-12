@@ -1,4 +1,3 @@
-/*
 var opcao_Rotear;
 
 function exercicio_Um()
@@ -124,7 +123,7 @@ function menu_Roteamento() // função para direcionar o usuário para a ação 
     ;
   }
 }
-*/
+
 
 
 

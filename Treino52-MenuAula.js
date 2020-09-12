@@ -1,6 +1,6 @@
 // Início do meu programa
 var opcao_Rotear;
-var conteudo;
+var variavel_1, variavel_2, variavel_3, variavel_4;
 
 function painel_Inicial()
 {
@@ -48,12 +48,15 @@ function menu_Roteamento() // função para direcionar o usuário para a ação 
     break;
 
     case 8 : 
-      document.write("Tchau!");
+      limpa_Mostra();
+      limpa_Resposta();
+      document.getElementById("mostra_1").innerHTML = "Tchau!";
     break;
 
     default :
-      document.write("Opção Inválida!");
-      setInterval(3000);
+      limpa_Mostra();
+      limpa_Resposta();
+      document.getElementById("mostra_1").innerHTML = "Opção Inválida!";
     ;
   }
 }
@@ -64,6 +67,9 @@ function menu_Roteamento() // função para direcionar o usuário para a ação 
 // Início do Exercício 1
 function exercicio_Um()
 {
+  limpa_Mostra();
+  limpa_Resposta();
+
   document.writeln("Exercício 1 - Escreva um algoritmo para ler três valores inteiros e escrever na tela o maior e o menor deles. Considere que todos os valores são diferentes.");
   let valor_1 = parseInt(window.prompt('ENTRADA DE DADOS', 'Digite o primeiro valor inteiro: '));
   let valor_2 = parseInt(window.prompt('ENTRADA DE DADOS', 'Digite o segundo valor inteiro: '));
@@ -113,8 +119,38 @@ function exercicio_Um()
 // Início do Exercício 2
 function exercicio_Dois()
 {
-  document.write("Exercício 2");
+  // Apresentação no Front-Central
+  limpa_Mostra();
+  limpa_Resposta();
+
+  document.getElementById("mostra_1").innerHTML = "Exercício 2 - Problemas";
+  document.getElementById("mostra_2").innerHTML = "O algoritmo lê dois valores inteiros e depois executa as seguintes ações: ";
+  document.getElementById("mostra_3").innerHTML = "1 - Se o resto da divisão da primeira pela segunda for 1, mostre a soma das variáveis mais o resto da divisão;";
+  document.getElementById("mostra_4").innerHTML = "2 - Se o resto for dois, escreva se os valores são par ou ímpar;";
+  document.getElementById("mostra_5").innerHTML = "3 - Se o resto for três, multiplique a soma dos valores pelo valor do primeiro;";
+  document.getElementById("mostra_6").innerHTML = "4 - Se o resto for quatro, divida a soma dos valores pelo segundo, se este for diferente de zero;";
+  document.getElementById("mostra_7").innerHTML = "5 - Mostre o quadrado dos valores em qualquer outra situação.";
+  exercicio_Entrada_valor();
 }
+
+
+  function exercicio_Entrada_valor()
+  {
+    variavel_1 = document.getElementById('entrada_valor1').value;
+    variavel_2 = document.getElementById('entrada_valor2').value;
+    variavel_3 = document.getElementById('entrada_valor3').value;
+    variavel_4 = document.getElementById('entrada_valor4').value;
+  }
+
+
+  function exercicio_Dois_Resp()
+  {
+    // Respostas do Exercício no Front-Direita
+    document.getElementById("resposta_1").innerHTML = "Exercício 2 - Respostas";
+    document.getElementById("resposta_2").innerHTML = "Teste" + variavel_1 + "teste2" + variavel_2;
+
+
+  }
 // Fim do Exercício 2
 
 
@@ -122,7 +158,9 @@ function exercicio_Dois()
 // Início do Exercício 3
 function exercicio_Tres()
 {
-  document.write("Exercício 3");
+  limpa_Mostra();
+  limpa_Resposta();
+  document.getElementById("mostra_1").innerHTML = "Exercício 3";
 }
 // Fim do Exercício 3
 
@@ -131,7 +169,9 @@ function exercicio_Tres()
 // Início do Exercício 4
 function exercicio_Quatro()
 {
-  document.write("Exercício 4");
+  limpa_Mostra();
+  limpa_Resposta();
+  document.getElementById("mostra_1").innerHTML = "Exercício 4";
 }
 // Fim do Exercício 4
 
@@ -140,7 +180,9 @@ function exercicio_Quatro()
 // Início do Exercício 5
 function exercicio_Cinco()
 {
-  document.write("Exercício 5");
+  limpa_Mostra();
+  limpa_Resposta();
+  document.getElementById("mostra_1").innerHTML = "Exercício 5";
 }
 // Fim do Exercício 5
 
@@ -149,7 +191,9 @@ function exercicio_Cinco()
 // Início do Exercício 6
 function exercicio_Seis()
 {
-  document.write("Exercício 6");
+  limpa_Mostra();
+  limpa_Resposta();
+  document.getElementById("mostra_1").innerHTML = "Exercício 6";
 }
 // Fim do Exercício 6
 
@@ -158,10 +202,41 @@ function exercicio_Seis()
 // Início do Exercício 7
 function exercicio_Sete()
 {
-  conteudo = document.getElementById('print').innerHTML;
-  tela_impressao = window.open('about:blank');
-  tela_impressao.document.write(conteudo);
-  tela_impressao.window.print();
-  tela_impressao.window.close();
+  limpa_Mostra();
+  limpa_Resposta();
+  document.getElementById("mostra_1").innerHTML = "Exercício 7";
+
 }
 // Fim do Exercício 7
+
+
+
+// Função para limpar parágrafos no Front-Central
+function limpa_Mostra()
+{
+  document.getElementById("mostra_1").innerHTML = "";
+  document.getElementById("mostra_2").innerHTML = "";
+  document.getElementById("mostra_3").innerHTML = "";
+  document.getElementById("mostra_4").innerHTML = "";
+  document.getElementById("mostra_5").innerHTML = "";
+  document.getElementById("mostra_6").innerHTML = "";
+  document.getElementById("mostra_7").innerHTML = "";
+  document.getElementById("mostra_8").innerHTML = "";
+  document.getElementById("mostra_9").innerHTML = "";
+  document.getElementById("mostra_10").innerHTML = "";
+}
+
+// Função para limpar parágrafos no Front-Direita
+function limpa_Resposta()
+{
+  document.getElementById("resposta_1").innerHTML = "";
+  document.getElementById("resposta_2").innerHTML = "";
+  document.getElementById("resposta_3").innerHTML = "";
+  document.getElementById("resposta_4").innerHTML = "";
+  document.getElementById("resposta_5").innerHTML = "";
+  document.getElementById("resposta_6").innerHTML = "";
+  document.getElementById("resposta_7").innerHTML = "";
+  document.getElementById("resposta_8").innerHTML = "";
+  document.getElementById("resposta_9").innerHTML = "";
+  document.getElementById("resposta_10").innerHTML = "";
+}

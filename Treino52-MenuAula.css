@@ -7,8 +7,8 @@ h1, h2
 
 p 
 {
+  margin: 0.7rem;
   font-size: 1.5rem;
-  color: #571a1a36;
   text-align: center;
 };
 
@@ -22,14 +22,16 @@ body
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 
-  "f_Esquerda f_Central f_Direita";
+  "f_Esquerda f_Central f_Direita"
+  ". f_Footer .";
 }
 
 
 #front_Esquerda
 {
   grid-area: f_Esquerda;
-  height: 80vh;
+  height: 75vh;
+  padding: 0 1rem;
   background-color: #A6BF80;
 
 }
@@ -37,20 +39,36 @@ body
 #front_Central
 {
   grid-area: f_Central;
-  height: 80vh;
+  height: 75vh;
+  padding: 0 1rem;
   background-color: #A69D21;
-
 }
+  #f_Central p
+  {
+    font-size: 1.2rem;
+    text-align: left;
+  }
 
 #front_Direita
 {
   grid-area: f_Direita;
-  height: 80vh;
+  height: 75vh;
+  padding: 0 1rem;
   background-color: #D99C2B;
+}
+  #f_Direita p
+  {
+    font-size: 1.2rem;
+    text-align: left;
+  }
 
+#front_Footer 
+{
+  grid-area: f_Footer;
+  visibility: visible;
+  height: 22vh;
+  text-align: center;
+  padding: 0 1rem;
+  background-color: #F2E4C9;
 }
 
-@media print {
-
-  visibility: hidden;
-}

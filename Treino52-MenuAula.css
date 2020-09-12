@@ -22,25 +22,35 @@ body
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 
-  "f_Esquerda f_Central f_Direta"
-  ;
+  "f_Esquerda f_Central f_Direita";
 }
 
 
 #front_Esquerda
 {
   grid-area: f_Esquerda;
+  height: 80vh;
+  background-color: #A6BF80;
 
 }
 
 #front_Central
 {
   grid-area: f_Central;
+  height: 80vh;
+  background-color: #A69D21;
 
 }
 
 #front_Direita
 {
   grid-area: f_Direita;
+  height: 80vh;
+  background-color: #D99C2B;
 
+}
+
+@media print {
+
+  visibility: hidden;
 }

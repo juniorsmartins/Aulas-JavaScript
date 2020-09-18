@@ -3,7 +3,8 @@
 
 let corSite = "blue";
 
-function resetaCor() {
+function resetaCor() 
+{
   corSite = "";
 }
 
@@ -15,7 +16,8 @@ console.log(corSite);
 
 let corHead = "yellow";
 
-function mudaCor(cor) {
+function mudaCor(cor) 
+{
   corHead = cor;
 }
 

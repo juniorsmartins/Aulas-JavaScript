@@ -2,14 +2,17 @@
 
 var sexo = 'V', idade = 20;
 
-if (sexo === 'M' && idade >= 18) {
+if (sexo == 'M' && idade >= 18) 
+{
     console.log('OK');
 } 
 
-if (sexo == 'F' || idade >= 23) {
+if (sexo == 'F' || idade >= 23) 
+{
   console.log('ok!');
 }
 
-if (sexo !== 'M' && sexo !== 'F') {
+if (sexo !== 'M' && sexo !== 'F') 
+{
   console.log('No');
 }

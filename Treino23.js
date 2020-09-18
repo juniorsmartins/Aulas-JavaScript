@@ -1,5 +1,7 @@
-function retornaSexo(sexo) {
-  switch(sexo) {
+function retornaSexo(sexo) 
+{
+  switch(sexo) 
+  {
     case 'M':
       return "Masculino";
     case 'F':

@@ -2,9 +2,12 @@ var pais = 'Brasil';
 
 console.log(`Nascido na(o) ${pais}`);
 
-if (pais == 'Brasil') {
+if (pais == 'Brasil') 
+{
   console.log('Você é brasileiro!');
-} else { 
+} 
+else 
+{ 
   console.log('Você é estrangeiro!');
 }
 

@@ -1,15 +1,18 @@
 var sexo = 'M';
 var masculino;
 
-if (sexo == 'M') {
+if (sexo == 'M') 
+{
   masculino = true;
-} else {
+} 
+else 
+{
   masculino = false;
 }
 
 console.log(masculino);
 
-var idade = 17;
+var idade = 19;
 var maioridade = idade >= 18;
 
 console.log(maioridade);

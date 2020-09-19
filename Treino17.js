@@ -7,7 +7,8 @@ let nota2 = 7;
 let nota3 = 8;
 console.log((nota1 + nota2 + nota3)/3);
 
-let pessoa = {
+let pessoa = 
+{
   nome:'Junior',
   idade: 25,
   estaAprovado: true,

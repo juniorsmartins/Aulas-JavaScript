@@ -13,3 +13,6 @@ window.document.write("<br/> Tamanho: ", variavel2);
 window.document.write("<br/> Resultado: ", variavel3);
 window.document.write("<br/>" + frutas + "<br/>");
 
+frutas[frutas.length] = "Goiaba";
+window.document.write("<br/>", frutas);
+
